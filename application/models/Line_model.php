@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Line_model extends CI_Model {
 
-	private $accessToken = "CHANNEL ACCESS TOKEN";
+	private $accessToken = "DWpkk2thaGXWQImbcu8NK25WrXEZPNCpHsn43aclfQdmF2IZrHCyxc8HqQsZawPJcdaRnFbRKiEle5We1ry4aoXrIuqWLc3EhyHnKynBmyQv7HZrTZeyh87hG6g+szTh/M9q8blfIdBOzF3xn8s4sFGUYhWQfeY8sLGRXgo3xvw=";
 
 	function __construct()
 	{
