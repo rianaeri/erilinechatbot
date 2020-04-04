@@ -15,8 +15,8 @@ use \LINE\LINEBot\SignatureValidator as SignatureValidator;
 $pass_signature = true;
 
 // set LINE channel_access_token and channel_secret
-$channel_access_token = "Isi dengan channel access token Anda";
-$channel_secret = "Isi dengan channel secret Anda";
+$channel_access_token = "MTOF98zCRjjcCkQeUiP0Vlwe7EBBdoSuBJdXjDkAWq9VEbaA6nxT0zJKgLyQ15ePm8Dr6MJ9yYaTRUJxWxawA7X6K4LIk1wMJyQwYi2XIcZ71sqtzoDeELVyD0wsEmy+80MedUSC6Xhyr4nf/RqjzgdB04t89/1O/w1cDnyilFU=";
+$channel_secret = "a97e51596f89b95b75808ada4d1f1af4";
 
 // inisiasi objek bot
 $httpClient = new CurlHTTPClient($channel_access_token);
@@ -155,7 +155,7 @@ $app->get('/content/{messageId}', function ($req, $response, $args) use ($bot) {
 
 $app->get('/pushmessage', function ($req, $response) use ($bot) {
     // send push message to user
-    $userId = 'Isi dengan user ID Anda';
+    $userId = '1653841548';
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
     $result = $bot->pushMessage($userId, $textMessageBuilder);
 
@@ -168,9 +168,8 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
 $app->get('/multicast', function ($req, $response) use ($bot) {
     // list of users
     $userList = [
-        'Isi dengan user ID Anda',
+        '1653841548',
         'Isi dengan user ID teman1',
-        'Isi dengan user ID teman2',
         'dst'
     ];
 
