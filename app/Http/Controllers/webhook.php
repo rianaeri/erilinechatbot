@@ -115,8 +115,6 @@ private function handleEvents()
             }
         }
     }
- 
- 
     $this->response->setContent("No events found!");
     $this->response->setStatusCode(200);
     return $this->response;
