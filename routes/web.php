@@ -12,7 +12,7 @@
 */
 
 $router->get('/key', function () use ($router) {
-    return \Illuminate\Support\Str::random(32); 
+    return $router->app->version();
 });
 $router->post('/webhook', 'Webhook');
 
