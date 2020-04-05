@@ -155,7 +155,7 @@ $app->get('/content/{messageId}', function ($req, $response, $args) use ($bot) {
 
 $app->get('/pushmessage', function ($req, $response) use ($bot) {
     // send push message to user
-    $userId = '1653841548';
+    $userId = 'U376968207b96f088ff4d49f63ef199da';
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
     $result = $bot->pushMessage($userId, $textMessageBuilder);
 
@@ -168,7 +168,7 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
 $app->get('/multicast', function ($req, $response) use ($bot) {
     // list of users
     $userList = [
-        '1653841548',
+        'U376968207b96f088ff4d49f63ef199da',
         'Isi dengan user ID teman1',
         'dst'
     ];
