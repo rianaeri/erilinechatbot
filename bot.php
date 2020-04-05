@@ -38,7 +38,7 @@ if (count($pesan_datang) > 2) {
 
 #-------------------------[Function]-------------------------#
 function shalat($keyword) {
-    $uri = "https://time.siswadi.com/" . $keyword;
+    $uri = "https://jadwalsholat.org" . $keyword;
 
     $response = Unirest\Request::get("$uri");
 
